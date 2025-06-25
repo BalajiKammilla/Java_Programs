@@ -16,8 +16,12 @@ public class Main {
         System.out.println("6. Fibonacci Series");
         System.out.println("7. Reverse a Given Number");
         System.out.println("8. Sum of the Digits");
-        System.out.println("");
-        System.out.println("");
+        System.out.println("9. Niven Number");
+        System.out.println("10. Calculate Power Of Number");
+        System.out.println("11. Strong Number");
+        System.out.println("12. Calculate GCD of Two Numbers");
+        System.out.println("13. Calculate LCM of Two Numbers");
+
         System.out.println("n. Exit !");
 
         System.out.println("Enter Your Choice.");
@@ -84,6 +88,38 @@ public class Main {
                 int digit = scanner.nextInt();
                 SumOfTheDigits.sumOfDigits(digit);
                 break;
+            case 9:
+                System.out.println("Enter a number to check Niven Number");
+                int niven = scanner.nextInt();
+                NivenNumber.checkNiven(niven);
+                break;
+            case 10:
+                System.out.println("Enter a base number to Calculate Power of Number");
+                int base = scanner.nextInt();
+                System.out.println("Enter a exponent number to Calculate Power of Number");
+                int exponent =scanner.nextInt();
+                PowerOfNumber.powerOfNumber(base,exponent);
+                break;
+            case 11:
+                System.out.println("Enter a number to check Strong Number");
+                int strong=scanner.nextInt();
+                StrongNumber.isStrong(strong);
+                break;
+            case 12:
+                System.out.println("Enter firstNumber to calculate GCD");
+                int firstNumber =scanner.nextInt();
+                System.out.println("Enter secondNumber to calculate GCD");
+                int secondNumber=scanner.nextInt();
+                GCD.calculateGcd(firstNumber,secondNumber);
+                break;
+            case 13:
+                System.out.println("Enter firstNumber to calculate LCM");
+                int firstNum =scanner.nextInt();
+                System.out.println("Enter secondNumber to calculate LCM");
+                int secondNum=scanner.nextInt();
+                LCM.calculateLcm(firstNum,secondNum);
+                break;
+
             default:
                 System.out.println("Invalid choice...!");
         }
