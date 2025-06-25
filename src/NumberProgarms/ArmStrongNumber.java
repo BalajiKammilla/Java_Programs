@@ -17,3 +17,4 @@ public class ArmStrongNumber {
         return false;
     }
 }
+//370, 153
