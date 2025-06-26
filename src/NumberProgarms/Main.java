@@ -21,7 +21,10 @@ public class Main {
         System.out.println("11. Strong Number");
         System.out.println("12. Calculate GCD of Two Numbers");
         System.out.println("13. Calculate LCM of Two Numbers");
-
+        System.out.println("14. Neon Number");
+        System.out.println("15. AutoMorphic Number");
+        System.out.println("16. Count Digits in Number");
+        System.out.println("17. Spy Number");
         System.out.println("n. Exit !");
 
         System.out.println("Enter Your Choice.");
@@ -119,9 +122,30 @@ public class Main {
                 int secondNum=scanner.nextInt();
                 LCM.calculateLcm(firstNum,secondNum);
                 break;
-
+            case 14:
+                System.out.println("Enter a number to check Neon Number");
+                int neon = scanner.nextInt();
+                NeonNumber.checkNeon(neon);
+                break;
+            case 15:
+                System.out.println("Enter a number to check Automorphic Number");
+                int number=scanner.nextInt();
+                AutomorphicNumber.checkAutomorphic(number);
+                break;
+            case 16:
+                System.out.println("Enter a number to count the digits");
+                int digits = scanner.nextInt();
+                CountDigits.digitCounter(digits);
+                break;
+            case 17:
+                System.out.println("Enter a number to check a Spy Number");
+                int spy = scanner.nextInt();
+                SpyNumber.spy(spy);
+                break;
             default:
                 System.out.println("Invalid choice...!");
         }
     }
 }
+
+//TODO- 20, 24,25, 27
