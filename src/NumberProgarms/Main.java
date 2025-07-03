@@ -25,6 +25,16 @@ public class Main {
         System.out.println("15. AutoMorphic Number");
         System.out.println("16. Count Digits in Number");
         System.out.println("17. Spy Number");
+        System.out.println("18. Magic Number");
+        System.out.println("19. Prime Numbers in between 1 to N");
+        System.out.println("20. Arm Strong Numbers in between 1 to N");
+        System.out.println("21. Count Evens And Odds in Number");
+        System.out.println("22. Kaprekar Number");
+        System.out.println("23. Happy Number");
+        System.out.println("24. Duck Number");
+        System.out.println("25. Decimal To Binary");
+        System.out.println("26. Binary Tp Decimal");
+        System.out.println("27. Sum of First N Natural Numbers");
         System.out.println("n. Exit !");
 
         System.out.println("Enter Your Choice.");
@@ -141,6 +151,64 @@ public class Main {
                 System.out.println("Enter a number to check a Spy Number");
                 int spy = scanner.nextInt();
                 SpyNumber.spy(spy);
+                break;
+            case 18:
+                System.out.println("Enter a number to check a Magic Number");
+                int magic = scanner.nextInt();
+                MagicNumber.magicNumber(magic);
+                break;
+            case 19:
+                System.out.println("Enter a range number to Prime Numbers");
+                int numbers = scanner.nextInt();
+                PrimeNumbersInRange.primeNumbers(numbers);
+                break;
+            case 20:
+                System.out.println("Enter a number to print range of ArmStrong numbers ");
+                int armStrongNum = scanner.nextInt();
+                ArmStrongNumberInRange.armStrong(armStrongNum);
+                break;
+            case 21:
+                System.out.println("Enter a number to Count Even and Odd Numbers");
+                int number1=scanner.nextInt();
+                CountEvenAndOddNumbers.countNumbers(number1);
+                break;
+            case 22:
+                System.out.println("Enter a number to check Kaprekar number");
+                int kaprekar=scanner.nextInt();
+                KaprekarNumber.kaprekar(kaprekar);
+                break;
+            case 23:
+                System.out.println("Enter a number to check Happy Number");
+                int happy = scanner.nextInt();
+                if (HappyNumber.isHappyNumber(happy)){
+                    System.out.println(happy + " is a Happy number");
+                }else {
+                    System.out.println(happy + " is not a Happy Number");
+                }
+                break;
+            case 24:
+                System.out.println("Enter a number to check Duck Number");
+                int duck= scanner.nextInt();
+                if (DuckNumber.isDuck(duck)){
+                    System.out.println(duck+" is a Duck Number");
+                }else {
+                    System.out.println(duck+ " is not a duck Number");
+                }
+                break;
+            case 25:
+                System.out.println("Enter a number to covert Decimal to Binary");
+                int decToBin=scanner.nextInt();
+                DecimalToBinary.convertToBinary(decToBin);
+                break;
+            case 26:
+                System.out.println("Enter a binary number to convert as Decimal");
+                int binToDec=scanner.nextInt();
+                BinaryToDecimal.binToDec(binToDec);
+                break;
+            case 27:
+                System.out.println("Enter a number to print sum first first N natural numbers");
+                int naturalNumber = scanner.nextInt();
+                SumOfNaturalNumbers.sumOfNumbers(naturalNumber);
                 break;
             default:
                 System.out.println("Invalid choice...!");
